@@ -24,7 +24,7 @@ ____________________________________
 ![Image](src/sword.png)
 ![Image](src/cubemap.png)
 ![Image](src/viewmodel.png)
-![Image](src/burncard.jpeg)
+![Image](src/burncard.jpg)
 
 Currently the mod is still in development, planned features may change or be removed entirely.
 
