@@ -6,3 +6,6 @@ ____________________________________
 For a list of new additions go here:
 https://pastebin.com/zmrNCyEW
 ____________________________________
+
+Currently the mod is still in development, planned features may change or be removed entirely.
+Please do not try to incorperate this in your own mod, I'll letchu whenever this is done probably but at least while its in development give me time to polish things
