@@ -9,4 +9,5 @@ ____________________________________
 
 Currently the mod is still in development, planned features may change or be removed entirely.
 
-Please do not try to incorperate any of this directly from me in your own mod, I'll let you know whenever this is done probably but at least while its in development give me time to polish things.
+Please do not try to incorperate any of this directly from me in your own mod, I'll let you know whenever this is done but for now while its in development give me time to polish things.
+:)
