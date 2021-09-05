@@ -5,6 +5,7 @@
 USE THE LATEST RELEASES FOR THE MOD, CLONING WILL GIVE YOU A VERSION WITH INCOMPLETE FEATURES AND LOTS OF BUGS
 ____________________________________
 **This Mod Contains:**
+
 -Restored weapons which were previously cut or unusable in Icepick.
 
 -Recreated weapons based off leftover game data and/or released information.
@@ -17,13 +18,15 @@ ____________________________________
 
 -Fixed and usable developer menu.
 
+-Lots of fixed dev functionality which was previously disabled
+
 -And lots of other fixes and features I could ramble on forever about.
 ____________________________________
 
 *Some Preview Screenshots:*
-![Image](src/sword.png)
-![Image](src/cubemap.png)
-![Image](src/viewmodel.png)
+![Image](src/sword.jpg)
+![Image](src/cubemap.jpg)
+![Image](src/viewmodel.jpg)
 ![Image](src/burncard.jpg)
 
 Currently the mod is still in development, planned features may change or be removed entirely.
