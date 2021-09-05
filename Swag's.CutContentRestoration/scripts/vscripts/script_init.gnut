@@ -1,0 +1,123 @@
+untyped
+
+global function SwagScriptInit
+//global function SwagDevMenu
+global function SwagIcepickMenu
+global function SMenu_Function
+
+//________________________________________________________________________________________________________________
+
+void function SwagScriptInit()
+{
+	//SwagDevMenu()
+	SwagIcepickMenu()
+}
+
+//________________________________________________________________________________________________________________
+
+//void function SwagDevMenu() //For dev menu to work without launch params (but it doesn't fucking work rn)
+//{
+	//Normal Launch Params:
+	//-dev +developer 1
+	
+	//DEV = true
+	//developer = 1
+//}
+
+//________________________________________________________________________________________________________________
+
+void function SMenu_Function( string input )
+{
+//if ( input == "1" )
+//	#if CLIENT
+//		RunUIScript( "InitSinglePlayerDevMenu" ) //Easier than enabling dev values without launch params I guess
+//	#endif
+
+#if CLIENT
+	RunUIScript( "InitSinglePlayerDevMenu" ) //Easier than enabling dev values without launch params I guess
+#endif
+}
+
+//________________________________________________________________________________________________________________
+
+void function SwagIcepickMenu()
+{
+	#if CLIENT
+	RegisterSpawnmenuPage( "SwagCutContent", "Cut Content Restoration Mod" );
+	
+	//Fixed Weapons
+	RegisterPageCategory( "SwagCutContent", "Swag_wep", "RESTORED WEAPONS", "Spawnmenu_GiveWeapon" );
+	RegisterCategoryItem( "Swag_wep", "proto_viewmodel_test", "proto viewmodel \n test" );
+	RegisterCategoryItem( "Swag_wep", "mp_weapon_arc_trap", "Arc Trap" );
+	RegisterCategoryItem( "Swag_wep", "mp_weapon_mega_turret_s2s", "s2s Mega Turret" );
+	RegisterCategoryItem( "Swag_wep", "sp_weapon_swarm_rockets_s2s", "s2s Swarm \n Rockets" );
+	RegisterCategoryItem( "Swag_wep", "sp_weapon_viperbossrockets_s2s", "Viper Boss \n Rockets" );
+	RegisterCategoryItem( "Swag_wep", "weapon_cubemap", "Dev Cubemap \n Tool" );
+	
+	//Recreated Weapons
+	RegisterPageCategory( "SwagCutContent", "Swag_wep2", "RECREATED WEAPONS", "Spawnmenu_GiveWeapon" );
+	RegisterCategoryItem( "Swag_wep2", "", "Fukuda BR" );								//TODO
+	RegisterCategoryItem( "Swag_wep2", "", "Gibber" );									//TODO
+	RegisterCategoryItem( "Swag_wep2", "", "FLAK-47" );									//TODO
+	RegisterCategoryItem( "Swag_wep2", "", "Proto Hold Beam" );							//TODO
+	RegisterCategoryItem( "Swag_wep2", "", "Smoke Grenade" );							//TODO
+	RegisterCategoryItem( "Swag_wep2", "", "Tracking Mine" );							//TODO
+	RegisterCategoryItem( "Swag_wep2", "", "XO Tracker Rifle \n (TITAN)" );				//TODO
+	RegisterCategoryItem( "Swag_wep2", "", "XO-6 Autopistol \n (TITAN)" );				//TODO
+	RegisterCategoryItem( "Swag_wep2", "", "Sticky Explosive \n Launcher (TITAN)" );	//TODO
+	RegisterCategoryItem( "Swag_wep2", "", "Arc Tesla Coil \n (TITAN)" );				//TODO
+	
+	
+	//Abilities
+	RegisterPageCategory( "SwagCutContent", "Swag_ability", "RESTORED ABILITIES", "Spawnmenu_GiveAbility" );
+	RegisterCategoryItem( "Swag_ability", "mp_ability_burncardweapon", "Burncard Ability" );
+	RegisterCategoryItem( "Swag_ability", "mp_ability_turretweapon", "MP Turret \n Placement" );
+	RegisterCategoryItem( "Swag_ability", "mp_ability_pathchooser", "Pathchooser" );
+	RegisterCategoryItem( "Swag_ability", "mp_ability_swordblock pilot_sword", "Pilot \n Swordblock" );
+	RegisterCategoryItem( "Swag_ability", "mp_ability_arc_blast", "Arc Blast" );
+	
+	//Recreated Abilities
+	RegisterPageCategory( "SwagCutContent", "Swag_ability2", "RECREATED ABILITIES", "Spawnmenu_GiveAbility" );
+	RegisterCategoryItem( "Swag_ability2", "", "Titan Grapple \n (TITAN)" );			//TODO
+	RegisterCategoryItem( "Swag_ability2", "", "Arc Tesla Coil \n (TITAN)" );			//TODO
+	RegisterCategoryItem( "Swag_ability2", "", "Grenade Launcher \n (TITAN)" );			//TODO
+	RegisterCategoryItem( "Swag_ability2", "", "Anti-Titan Mine" );						//TODO
+	RegisterCategoryItem( "Swag_ability2", "", "Dome Shield \n (TITAN)" );				//TODO
+	RegisterCategoryItem( "Swag_ability2", "", "Big Dome \n (TITAN)" );					//TODO
+	RegisterCategoryItem( "Swag_ability2", "", "Cloakfield" );							//TODO
+	RegisterCategoryItem( "Swag_ability2", "", "Ground Slam" );							//TODO
+	
+	//Melee
+	RegisterPageCategory( "SwagCutContent", "Swag_melee", "RESTORED MELEE", "Spawnmenu_GiveMelee" );
+	RegisterCategoryItem( "Swag_melee", "melee_pilot_kunai", "Pilot Kunai" );
+	RegisterCategoryItem( "Swag_melee", "melee_pilot_sword", "Pilot Sword" );
+	RegisterCategoryItem( "Swag_melee", "melee_pilot_sword allow_as_primary", "Pilot Sword \n (PRIMARY)" );
+	RegisterCategoryItem( "Swag_melee", "melee_titan_punch_fighter beserker", "Bison Melee \n (TIAN)" );
+	RegisterCategoryItem( "Swag_melee", "melee_titan_punch_fighter allow_as_primary beserker", "Bison Melee \n (TIAN) \n (PRIMARY)" );
+	
+	//Npcs
+	RegisterPageCategory( "SwagCutContent", "Swag_npc", "NPCS", "Spawnmenu_SpawnNpc" );
+	RegisterCategoryItem( "Swag_npc", "npc_soldier_blisk", "Blisk NPC" + " " );
+	RegisterCategoryItem( "Swag_npc", "npc_soldier_hero_bear", "Bear NPC" + " " );
+	RegisterCategoryItem( "Swag_npc", "npc_soldier_hero_sarah", "Sarah NPC" + " " );
+	
+	//Functions
+	RegisterPageCategory( "SwagCutContent", "Swag_func", "FUNCTIONS", "SMenu_Function" );
+	RegisterCategoryItem( "Swag_func", "1", "init Powerups" );
+	RegisterCategoryItem( "Swag_func", "2", "Dev Menu \n Shortcut" );
+	
+	//Credit
+	RegisterPageCategory( "SwagCutContent", "Swag_cred", "Made by: Swagguy47", "Spawnmenu_SpawnNpc" );
+	RegisterPageCategory( "SwagCutContent", "Swag_cred2", "Thanks for using my mod! <3", "Spawnmenu_SpawnNpc" );
+
+	#endif
+}
+
+//________________________________________________________________________________________________________________
+
+
+		//{
+		//	"Path": "ui/menu_swag_pathchooser_dialog.nut",
+		//	"RunOn": "SERVER || CLIENT",
+		//},
+//BACKUP

@@ -1,0 +1,149 @@
+npc_marvin
+{
+	AIClass							marvin
+
+	title 							#NPC_MARVIN
+	ui_targetinfo					"ui/targetinfo_npc_basic" [$mp]
+	ui_targetinfo					"ui/targetinfo_npc_hackable" [$sp]
+
+	HullType						"HULL_HUMAN"
+	BodyType						marvin
+	SmartAmmoLockType				none
+	smartAmmoLockAttachmentName0	HEADFOCUS
+
+	marvin_type 					"marvin_type_walker"
+
+	BehaviorSelector				"behavior_marvin"
+
+	mechanical						1
+	nonCombatAI						0
+
+	BaseClass						"npc_marvin"
+
+	footstep_type					"robot"
+
+	leechAnimSet					marvin
+	leechMaxDist			150
+	goalTolerance			400
+
+	DefaultModelName				"models/robots/marvin/marvin.mdl"
+	DefaultWeapon					"mp_weapon_car"
+	WeaponCapacity					"PilotMainWeapons"
+
+	Health							10 [$sp]
+	Health							10 [$mp]
+
+	FOV_Vert_Offset					-10
+    FOV_Near_Dist					150		// distance at which we transition between near and far FOV values
+	FOV_Far_Dist					1000	// use far values after this distance, interpolate horizontal in between, use far for vertical
+
+	FOV_Idle_Near_Horz				180
+	FOV_Idle_Near_Vert				180
+	FOV_Idle_Far_Horz				180
+	FOV_Idle_Far_Vert				180
+
+	FOV_Alert_Near_Horz				180
+	FOV_Alert_Near_Vert				180
+	FOV_Alert_Far_Horz				180
+	FOV_Alert_Far_Vert				180
+
+	FOV_Combat_Near_Horz			180
+	FOV_Combat_Near_Vert			180
+	FOV_Combat_Far_Horz				180
+	FOV_Combat_Far_Vert				180
+
+	YawSpeed						30
+	MoveYawSpeed					12
+	AimAngularSpeed					7
+
+	MeleeDamageMin					10
+	MeleeDamageMax					20
+	MeleeDamageRadius				64
+
+	fallDeathHeight 				300
+
+	PainOnHeavyDamageThreshold		0
+	PainOnRepeatDamageThreshold		0
+
+	MinStartMoveDist				100
+	MaxArrivalDist					120
+	MinForceWalkDist				150
+
+	magneticRange					160
+
+	moveDeflectionLookAheadTime		1.5
+	reactChanceDefault				100
+	
+	//####################################
+	//COMBAT MARVIN STUFF
+	//####################################
+	
+	
+	NoticeForgetPostTime	5.0
+	NoticeForgetPreTime		1.0
+
+	NoticeDistNear_Alert	300
+	NoticeDistNear_Combat	300
+	NoticeDistNear_Idle		150
+	NoticeDistFar_Alert		1800
+	NoticeDistFar_Combat	2500
+	NoticeDistFar_Idle		1500
+	NoticeTimeNear_Alert	0.2
+	NoticeTimeNear_Combat	0.1
+	NoticeTimeNear_Idle		0.5
+	NoticeTimeFar_Alert		0.75
+	NoticeTimeFar_Combat	0.5
+	NoticeTimeFar_Idle		2.0
+	NoticeTimePeripheral_Alert	1.0
+	NoticeTimePeripheral_Combat 0.75
+	NoticeTimePeripheral_Idle	2.0
+	
+	crouchCombatDistInner	400
+	crouchCombatDistOuter	500
+	
+	MeleeDamageMax					53		[$sp]
+	MeleeDamageMin					53		[$sp]
+	
+	MeleeDamageRadius				60		[$sp]
+	MeleeRange						60		[$sp]
+	
+	MeleeChargeDamageMin			80
+	MeleeChargeDamageMax			80
+	MeleeChargeDamageMinHeavyArmor	80
+	MeleeChargeDamageMaxHeavyArmor	80
+	MeleeChargeDamageRadius			25
+	MeleeChargeRange				135
+	meleeChargeInterval				1
+	MeleeChargeEnemyArmorType		any
+
+	meleeImpactEffectTable			"melee_spectre"
+
+	MinForceWalkDist				0
+	MinStartMoveDist				100
+	MoveYawSpeed					12
+	moveDeflectionLookAheadTime		0.5			[$sp]
+
+	shootingCoverFightRadius 		600			[$sp]
+
+	DrawEnemyHealthBar				0
+	DrawTargetHealthBar				0
+
+	resetBurstOnStopShootOverlay	1
+	restrictAimGunToValidSequences	1
+	
+	headshotFX 						"P_headshot_pilot_robot"
+	landingImpactTable				"pilot_landing"
+	footstepImpactTable				"pilot_foostep"
+
+	faceEnemyStrictToleranceAngle	30
+	faceEnemyWhileMovingDist		600
+	
+	longJumpCheckMinInterval		15
+	longJumpCheckMaxInterval		30
+	longJumpMinDist					400
+	longJumpMaxDist					700
+	longJumpHeight					300
+	
+	allowCower						1
+	allowUseCover					1
+}

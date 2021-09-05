@@ -1,0 +1,43 @@
+{
+	"ApiId" : "CutStuffRestore",
+	"Name" : "Cut Content Restoration",
+	"Description" : "Fixes and reimpliments tons of cut/unreleased/prototype features and re-enables some dev functions",
+	"Authors" : [
+		"Swagguy47"
+	],
+	"Contacts" : [
+		"Discord: Swagguy47#1612"
+	],
+	"Version" : "0.3",
+	"CustomScripts": [
+		{
+			"Path": "weapon_cache.nut",
+			"RunOn": "SERVER || CLIENT",
+			"ClientCallback": "SwagWepCache",
+			"ServerCallback": "SwagWepCache"
+		},
+		{
+			"Path": "script_init.gnut",
+			"RunOn": "SERVER || CLIENT",
+			"ClientCallback": "SwagScriptInit",
+			"ServerCallback": "SwagScriptInit"
+		},
+		{
+			"Path": "weapons/mp_ability_pathchooser.gnut",
+			"RunOn": "SERVER || CLIENT",
+		},
+		{
+			"Path": "weapons/mp_ability_burncardweapon.gnut",
+			"RunOn": "SERVER || CLIENT",
+		},
+		{
+			"Path": "weapons/mp_ability_turretweapon.gnut",
+			"RunOn": "SERVER || CLIENT",
+		},
+		{
+			"Path": "weapons/mp_ability_arc_blast.nut",
+			"RunOn": "SERVER || CLIENT",
+		},
+		
+	],
+}

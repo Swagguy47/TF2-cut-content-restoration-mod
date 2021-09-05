@@ -1,0 +1,7 @@
+#base "npc_marvin.txt"
+npc_marvin_tf1
+{
+	DefaultModelName_IMC		"models/humans/imc_villain/blisk/imc_villain_blisk.mdl"
+	DefaultModelName_MIL		"models/humans/imc_villain/blisk/imc_villain_blisk.mdl"
+}
+
