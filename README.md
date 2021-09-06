@@ -6,11 +6,11 @@ USE THE LATEST RELEASES FOR THE MOD, CLONING WILL GIVE YOU A VERSION WITH INCOMP
 ____________________________________
 **This Mod Contains:**
 
--Restored weapons which were previously cut or unusable in Icepick.
+-Restored weapons which were previously cut or unusable normally/in Icepick.
 
 -Recreated weapons based off leftover game data and/or released information.
 
--Restored abilities which were previously cut or unusable in Icepick.
+-Restored abilities which were previously cut or unusable normally/in Icepick.
 
 -Recreated abilities based off leftover game data and/or released information.
 
@@ -18,10 +18,14 @@ ____________________________________
 
 -Fixed and usable developer menu.
 
--Lots of fixed dev functionality which was previously disabled
+-Lots of fixed dev functionality which was previously disabled.
+
+-New Icepick menu for people who don't like the console to acess these things.
 
 -And lots of other fixes and features I could ramble on forever about.
 ____________________________________
+Link to full list of additions and useful console commands here:
+https://pastebin.com/zmrNCyEW
 
 *Some Preview Screenshots:*
 ![Image](src/sword.jpg)
