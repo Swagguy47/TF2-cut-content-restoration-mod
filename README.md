@@ -4,7 +4,10 @@
 
 USE THE LATEST RELEASES FOR THE MOD, CLONING WILL GIVE YOU A VERSION WITH INCOMPLETE FEATURES AND LOTS OF BUGS
 
-If you want to use the Dev menu which is included in this mod, Open origin, set your Titanfall 2 Launch properties to: "-dev +developer 1"
+If you want to use the Dev menu which is included in this mod, Open origin, set your Titanfall 2 Launch properties to: 
+
+'-dev +developer 1'
+
 Most parts of the menu still don't work, I'll probably be slowly adding more support for it in future patches. But RN all the start points work. Go try That!
 ____________________________________
 **This Mod Contains:**
