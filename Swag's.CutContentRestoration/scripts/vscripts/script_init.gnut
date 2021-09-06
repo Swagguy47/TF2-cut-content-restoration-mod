@@ -5,6 +5,10 @@ global function SwagScriptInit
 global function SwagIcepickMenu
 global function SMenu_Function
 
+//The way I handle making the releases is by commenting out the weapons in SwagIcepickMenu() that aren't ready yet before zipping it up
+//Not all weapons here will work
+
+
 //________________________________________________________________________________________________________________
 
 void function SwagScriptInit()
@@ -56,9 +60,9 @@ void function SwagIcepickMenu()
 	
 	//Recreated Weapons
 	RegisterPageCategory( "SwagCutContent", "Swag_wep2", "RECREATED WEAPONS", "Spawnmenu_GiveWeapon" );
-	RegisterCategoryItem( "Swag_wep2", "", "Fukuda BR" );								//TODO
+	RegisterCategoryItem( "Swag_wep2", "mp_weapon_fukuda_br", "Fukuda BR" );								
 	RegisterCategoryItem( "Swag_wep2", "", "Gibber" );									//TODO
-	RegisterCategoryItem( "Swag_wep2", "", "FLAK-47" );									//TODO
+	RegisterCategoryItem( "Swag_wep2", "mp_weapon_flak_rifle", "FLAK-47" );									
 	RegisterCategoryItem( "Swag_wep2", "", "Proto Hold Beam" );							//TODO
 	RegisterCategoryItem( "Swag_wep2", "", "Smoke Grenade" );							//TODO
 	RegisterCategoryItem( "Swag_wep2", "", "Tracking Mine" );							//TODO
@@ -91,9 +95,9 @@ void function SwagIcepickMenu()
 	RegisterPageCategory( "SwagCutContent", "Swag_melee", "RESTORED MELEE", "Spawnmenu_GiveMelee" );
 	RegisterCategoryItem( "Swag_melee", "melee_pilot_kunai", "Pilot Kunai" );
 	RegisterCategoryItem( "Swag_melee", "melee_pilot_sword", "Pilot Sword" );
-	RegisterCategoryItem( "Swag_melee", "melee_pilot_sword allow_as_primary", "Pilot Sword \n (PRIMARY)" );
-	RegisterCategoryItem( "Swag_melee", "melee_titan_punch_fighter beserker", "Bison Melee \n (TIAN)" );
-	RegisterCategoryItem( "Swag_melee", "melee_titan_punch_fighter allow_as_primary beserker", "Bison Melee \n (TIAN) \n (PRIMARY)" );
+	RegisterCategoryItem( "Swag_melee", "melee_pilot_sword_p", "Pilot Sword \n (PRIMARY)" );
+	RegisterCategoryItem( "Swag_melee", "melee_titan_punch_bison", "Bison Melee \n (TIAN)" );
+	RegisterCategoryItem( "Swag_melee", "melee_titan_punch_bison_p", "Bison Melee \n (TIAN) \n (PRIMARY)" );
 	
 	//Npcs
 	RegisterPageCategory( "SwagCutContent", "Swag_npc", "NPCS", "Spawnmenu_SpawnNpc" );

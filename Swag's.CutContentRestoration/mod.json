@@ -8,12 +8,11 @@
 	"Contacts" : [
 		"Discord: Swagguy47#1612"
 	],
-	"Version" : "0.3",
+	"Version" : "0.4",
 	"CustomScripts": [
 		{
 			"Path": "weapon_cache.nut",
-			"RunOn": "SERVER || CLIENT",
-			"ClientCallback": "SwagWepCache",
+			"RunOn": "SERVER",
 			"ServerCallback": "SwagWepCache"
 		},
 		{

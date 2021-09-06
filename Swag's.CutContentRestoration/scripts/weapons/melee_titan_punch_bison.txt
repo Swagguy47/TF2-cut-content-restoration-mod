@@ -1,0 +1,40 @@
+#base "melee_titan_punch.txt"
+
+WeaponData
+{
+	// Models
+	"viewmodel"   									"models/weapons/empty_handed/atpov_electric_fist.mdl"
+	"playermodel" 									"models/weapons/empty_handed/w_empty_handed_titan.mdl"
+
+	"melee_lunge_time"								"0.2"			////
+	"melee_lunge_target_range"						"200"			// Titan melee script doesn't lunge.
+	
+	"fire_mode"										"offhand_melee"
+
+	SP_BASE
+	{
+		"melee_angle"									"45"
+		"melee_lunge_target_angle"						"45"
+	}
+	MP_BASE
+	{
+		"melee_angle"									"20"
+		"melee_lunge_target_angle"						"20"
+	}
+
+	"pushback_scale"								"0.3"
+	
+	"melee_attack_animtime"						"1.23"
+	"melee_raise_recovery_animtime_normal"		"0.77"
+	"melee_raise_recovery_animtime_quick"		"0.77"
+
+	"melee_lunge_target_range"					"500"
+	"melee_lunge_target_angle"					"15"
+
+	"melee_damage_heavyarmor"					"5000"
+	"melee_range"								"300"
+	"melee_anim_1p_number"						"3"			// ACT_VM_MELEE_ATTACK1, 2, or 3
+	"melee_anim_3p"								"ACT_GESTURE_MELEE_ATTACK3"
+	"damage_flags"								"DF_MELEE | DF_EXPLOSION | DF_CRITICAL | DF_KNOCK_BACK | DF_DOOM_FATALITY"
+	"impact_effect_table"						"40mm_splasher_rounds"
+}
