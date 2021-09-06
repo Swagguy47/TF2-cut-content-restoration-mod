@@ -20,7 +20,7 @@ ____________________________________
 
 -Lots of fixed dev functionality which was previously disabled.
 
--New Icepick menu for people who don't like the console to acess these things.
+-New Icepick menu for people who don't like the console to access these things.
 
 -And lots of other fixes and features I could ramble on forever about.
 ____________________________________
