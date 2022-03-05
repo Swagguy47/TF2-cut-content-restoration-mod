@@ -34,6 +34,8 @@ Link to full list of additions and useful console commands here:
 https://pastebin.com/zmrNCyEW
 
 *Some Preview Screenshots:*
+![Image](src/pilots.jpg)
+![Image](src/titans.jpg)
 ![Image](src/sword.jpg)
 ![Image](src/cubemap.jpg)
 ![Image](src/viewmodel.jpg)
