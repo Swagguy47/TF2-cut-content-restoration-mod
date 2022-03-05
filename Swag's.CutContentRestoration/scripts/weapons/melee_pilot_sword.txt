@@ -205,5 +205,10 @@ WeaponData
 			"melee_attack_animtime"							"0.0"
 			"melee_lunge_time"								"0.2"
 		}
+		
+		primary
+		{
+			"fire_mode"									"semi-auto"
+		}
 	}
 }

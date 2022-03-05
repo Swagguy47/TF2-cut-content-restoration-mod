@@ -13,6 +13,24 @@ void function OnWeaponActivate_burncardweapon( entity weapon )
 		//int skin = GetBurnCardWeaponSkin( weapon )
 		//weapon.SetWeaponSkin( skin )
 		Assert( owner.IsPlayer() )
+		
+		entity player = GetPlayerByIndex( 0 );
+		entity weapon = player.GetActiveWeapon();
+		string weaponId = weapon.GetWeaponClassName();
+		
+		array<string> burnMods = []
+		array<string> mods = GetWeaponMods_Global( weaponId )
+		string prefix = "burn_mod"
+		foreach ( mod in mods )
+		{
+			if ( mod.find( prefix ) == 0 )
+			{
+				Spawnmenu_GiveWeaponMod( mod )
+			}
+		}
+		//Yeah
+		
+		
 		//PlayerInventory_StartCriticalSection( owner ) //TODO: Should check that we're not already in a critical section? But then you need to delay starting the critical section till after the current critical section is ended?
 	}
 	#endif

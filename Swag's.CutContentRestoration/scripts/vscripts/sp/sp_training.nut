@@ -118,7 +118,7 @@ struct HangarTitanGroup
 	entity 	marvin
 	entity 	pilot
 
-	int 	titanSkin = -1
+	int 	titanSkin = 0 //-1
 
 	string 	titanAnim
 	string 	rackAnim
@@ -568,7 +568,7 @@ void function Training_PodIntro( entity player )
 	SetDoF_Default( player )
 }
 
-void function PlaySound_SimPod_DoorShut( entity playerFirstPersonProxy  ) //Hack, needed for wargames but has unfortunate side effect for Training.
+void function PlaySound_SimPod_DoorShut( entity playerFirstPersonProxy  ) //Hack, needed for wargames but has unfortunate side effect for Training. 
 {
 	entity player = playerFirstPersonProxy.GetOwner()
 	if ( !IsValid( player ) )
@@ -3345,6 +3345,7 @@ void function Training_Setup_Titanfall( entity player )
 	player.DisableWeapon()  // player weapon is disabled before teleport to Titanfall area starts
 
 	TeleportPlayerAndBT( "startpoint_titanfall" )
+	//GetPlayerByIndex(0).SetOrigin( < 1275, -2560, -7750 > )
 }
 
 void function Training_Skipped_Titanfall( entity player )
@@ -6429,7 +6430,7 @@ void function FancyTeleport_EffectsAndSound( entity player, vector teleportPos )
 
 	Remote_CallFunction_Replay( player, "ScriptCallback_PodTransition_PlayerScreenFX" )
 
-	EmitSoundOnEntity( player, "Timeshift_Scr_DeviceShift2Present" )
+	EmitSoundOnEntity( player, "training_og_materialize_2ch_v1_01" ) // Timeshift_Scr_DeviceShift2Present
 
 	wait 0.25  // let screen FX fade screen
 
@@ -6439,7 +6440,7 @@ void function FancyTeleport_EffectsAndSound( entity player, vector teleportPos )
 
 	wait 0.5  // let white screen fade
 
-	EmitSoundOnEntity( player, "training_scr_zen_player_fall" )
+	EmitSoundOnEntity( player, "training_og_materialize_2ch_v1_02" )
 
 	wait 0.2  // let screen clear before pulsing
 

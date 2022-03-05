@@ -49,7 +49,7 @@ var function OnWeaponPrimaryAttackAnimEvent_chooser( entity weapon, WeaponPrimar
 	Assert( ownerPlayer.IsPlayer() )
 
 #if CLIENT
-	RunUIScript( "OpenPathChooserDialog_Swag" ) //Causes error for no reason >:(
+	RunUIScript( "OpenPathChooserDialog" ) //Causes error for no reason >:(
 #endif
 
 	return weapon.GetWeaponSettingInt( eWeaponVar.ammo_min_to_fire )

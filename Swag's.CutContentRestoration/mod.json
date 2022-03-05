@@ -1,6 +1,6 @@
 {
 	"ApiId" : "CutStuffRestore",
-	"Name" : "Cut Content Restoration",
+	"Name" : "Cut Content Restoration v0.5",
 	"Description" : "Fixes and reimpliments tons of cut/unreleased/prototype features and re-enables some dev functions",
 	"Authors" : [
 		"Swagguy47"
@@ -37,6 +37,11 @@
 			"Path": "weapons/mp_ability_arc_blast.nut",
 			"RunOn": "SERVER || CLIENT",
 		},
-		
+		{
+			"Path": "tools/sh_tool_yeet.nut",
+			"RunOn": "SERVER || CLIENT",
+			"ClientCallback": "Toolgun_RegisterTool_Yeet",
+			"ServerCallback": "Toolgun_RegisterTool_Yeet"
+		},
 	],
 }

@@ -9,9 +9,6 @@ void function SwagWepCache()
 	//--------------------------------------------
 	
 	PrecacheWeapon( "melee_pilot_kunai" )
-	PrecacheWeapon( "melee_pilot_sword_p" )
-	PrecacheWeapon( "melee_titan_punch_bison" )
-	PrecacheWeapon( "melee_titan_punch_bison_p" )
 	PrecacheWeapon( "mp_weapon_flak_rifle" )
 	PrecacheWeapon( "mp_weapon_fukuda_br" )
 	
