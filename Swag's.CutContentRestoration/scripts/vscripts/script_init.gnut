@@ -5,11 +5,11 @@ global function SwagScriptInit
 global function SwagIcepickMenu
 global function addMenus
 global function Swag_CMD
-global function Thylord_SpawnNPC
-global function Thylord_SetNPCTeam
-global function Thylord_SetNPCWeapon
-global string thylord_npc_weapon = "default"
-global int thylord_npc_team = TEAM_IMC;
+global function r1_SpawnNPC
+global function r1_SetNPCTeam
+global function r1_SetNPCWeapon
+global string r1_npc_weapon = "default"
+global int r1_npc_team = TEAM_IMC;
 
 //The way I handle making the releases is by commenting out the weapons in SwagIcepickMenu() that aren't ready yet before zipping it up
 //Not all weapons here will work
@@ -123,8 +123,8 @@ void function r1_SpawnNPC( string ai_to_spawn ) //Thx thylord <3
 			string weapon_name = npc.GetLatestPrimaryWeapon().GetWeaponClassName()
 		
 			npc.TakeWeaponNow( weapon_name )
-			npc.GiveWeapon( thylord_npc_weapon )
-			npc.SetActiveWeaponByName( thylord_npc_weapon )
+			npc.GiveWeapon( r1_npc_weapon )
+			npc.SetActiveWeaponByName( r1_npc_weapon )
 		}
 	}
 #endif
