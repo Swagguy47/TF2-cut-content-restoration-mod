@@ -1,5 +1,8 @@
 # TF2-cut-content-restoration-mod
 
+*NOTICE*
+This mod never got close to completion, lots of planned features were simply undeveloped. These files are likely outdated compared to what's locally on my machine, but are probably more stable too. I have decided to just make this repo public finally, knowing I likely will never complete this project, and seeing the abandonment of Icepick for Northstar, I figured it's better out there to some degree than not at all, sorry for the inconvenience and disappointment.
+
 ![Image](src/banner.png)
 
 USE THE LATEST RELEASES FOR THE MOD, CLONING WILL GIVE YOU A VERSION WITH INCOMPLETE FEATURES AND LOTS OF BUGS
